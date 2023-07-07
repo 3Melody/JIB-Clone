@@ -13,7 +13,7 @@
   padding: 15px;
   margin: 0; }
 
-.left-top {
+.Right-top {
   display: flex;
   align-items: center; }
 
@@ -29,6 +29,32 @@
 .profile {
   display: flex;
   color: white; }
+
+.profile i{
+  margin: 0 5px;
+}
+
+.basket h5 {
+  margin: 0 5px; }
+
+.between1 {
+  background-color: white;
+  height: 4px;
+  width: 4px;
+  border-radius: 100%; }
+
+.between2 {
+  background-color: white;
+  height: 4px;
+  width: 4px;
+  border-radius: 100%;
+  margin: 1px 0; }
+
+.between3 {
+  background-color: white;
+  height: 4px;
+  width: 4px;
+  border-radius: 100%; }
 
 .thailand {
   padding: 0 5px;

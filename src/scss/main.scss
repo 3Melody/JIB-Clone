@@ -32,7 +32,7 @@ $head-color:#2c3d92;
     @include marpad(15px,0 );
 }
 
-.left-top{
+.Right-top{
     display: flex;
     align-items: center;
 }
@@ -51,9 +51,35 @@ $head-color:#2c3d92;
 
 .profile{
     @include flex();
-    color: white
+    color: white;
 }
 
+.basket h5{
+    margin: 0 5px;
+}
+
+.between1{
+    background-color: white;
+    height: 4px;
+    width: 4px;
+    border-radius: 100%
+}
+
+.between2{
+    background-color: white;
+    height: 4px;
+    width: 4px;
+    border-radius: 100%;
+    margin: 1px 0;
+    
+}
+
+.between3{
+    background-color: white;
+    height: 4px;
+    width: 4px;
+    border-radius: 100%
+}
 
 .thailand{
     @include marpad(0 5px,0);
@@ -75,5 +101,4 @@ $head-color:#2c3d92;
 
 body{
     background-color: #EBEBED;
-    color:black;
 }
