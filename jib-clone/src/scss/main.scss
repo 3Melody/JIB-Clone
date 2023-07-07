@@ -1,0 +1,78 @@
+$head-color:#2c3d92;
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin flex(){
+    display: flex;
+}
+
+@mixin marpad($addpadding,$addmargin) {
+    padding:$addpadding;
+    margin: $addmargin;
+}
+
+@mixin widthon($widthadd){
+    width: $widthadd;
+}
+
+.language-chage{
+    display: flex;
+    @include widthon(63px);
+    align-items: center;
+}
+
+.head{
+    background-color: $head-color;
+    @include marpad(15px,0 );
+}
+
+.left-top{
+    display: flex;
+    align-items: center;
+}
+
+.main-profile{
+ display: flex;
+ height: 26.5px;
+ align-items: center
+ 
+}
+
+.basket{
+    @include flex();
+    color: white
+}
+
+.profile{
+    @include flex();
+    color: white
+}
+
+
+.thailand{
+    @include marpad(0 5px,0);
+}
+
+.thailand-size{
+    @include widthon(100%);
+}
+
+.english-size{
+    @include widthon(80%);
+}
+
+.top-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body{
+    background-color: #EBEBED;
+}
