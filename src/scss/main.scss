@@ -174,9 +174,71 @@ $head-color:#2c3d92;
     border-left: 4px solid transparent;
     }
 
+    .contant{
+        @include marpad(10px 10px,10px 5px);
+        background-color: white;
+    }
+
+    .contant h1{
+        margin-bottom: 15px;
+        font-weight: 700;
+        font-size: 26px;
+        word-break: break-all;
+    }
+
+
+    .show-product img{
+        width: 100%;
+        
+    }
+
+
+
+    .view{
+        height: 50px;
+        border:1px solid rgba(207, 207, 207, 0.428);
+        position: relative;
+        display: grid;
+        place-items: center;
+        @include marpad(0,0 2px );
+    }
+
+    .view img{
+        padding: 2px;
+        display:block;   
+    }
+
+    .more-product{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .more-product img{
+        width: 50px;
+        padding: 4px; 
+       
+    }
+
+    .more-product div{
+        width: 100%;
+    }
+
+    .top-view{
+        display: flex;
+    }
+
+    .bottom-view{
+        display: flex;
+        margin-top: 5px;
+    }
+
+
   body{
     background-color: #EBEBED;
-    }   
+    } 
+
+
 
 
   @media screen and (min-width: 768px) {
