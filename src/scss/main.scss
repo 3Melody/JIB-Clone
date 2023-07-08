@@ -1,7 +1,5 @@
 $head-color:#2c3d92;
 
-
-
 *{
     box-sizing: border-box;
     margin: 0;
@@ -29,29 +27,35 @@ $head-color:#2c3d92;
 
 .head{
     background-color: $head-color;
-    @include marpad(15px,0 );
+    @include marpad(15px,0);
+    position: relative;
 }
 
 .Right-top{
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .main-profile{
  display: flex;
  height: 26.5px;
  align-items: center
- 
 }
 
 .basket{
     @include flex();
-    color: white
+    color: white;
+    position: relative;
 }
 
 .profile{
     @include flex();
     color: white;
+}
+
+.profile i {
+    margin:0 4px;
 }
 
 .basket h5{
@@ -71,7 +75,6 @@ $head-color:#2c3d92;
     width: 4px;
     border-radius: 100%;
     margin: 1px 0;
-    
 }
 
 .between3{
@@ -87,18 +90,151 @@ $head-color:#2c3d92;
 
 .thailand-size{
     @include widthon(100%);
-}
+    }
 
 .english-size{
     @include widthon(80%);
-}
+    }
 
 .top-head{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+    }
 
-body{
+.search input{
+    @include marpad(6px 12px,0);
+    color:#555;
+    font-size: 14px;
+    width: 100%;
+    }
+
+.logo-search{
+    background-color:#F2591D ;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    }
+
+.search{
+    @include flex();
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    }
+
+.catagory{
+    @include marpad(6px 12px,0 );
+    border-radius: 0;
+    border: 1px solid gray;
+    font-size: 13px;
+    height: 33px;
+    white-space: nowrap;
+    }
+
+.search i{
+    @include marpad(6px 12px,0 );
+    font-size:14px;
+    }
+
+    .basket h5{
+        white-space: nowrap;
+    }
+
+    .profile h5{
+        white-space: nowrap;
+    }
+
+.back-basket{
+    background-color: #f2a71d;
+    border-radius: 100px;
+    font-size: 0.8rem;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    top: 6px;
+    left: 8px;
+    opacity: 70%;
+    width: 13px;
+    height: 13px;
+    }
+
+.num-basket{
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    color: black;
+    }
+
+.triangle {
+    display: inline-block;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    }
+
+  body{
     background-color: #EBEBED;
-}
+    }   
+
+
+  @media screen and (min-width: 768px) {
+    .search input{
+        width: 100%;
+    }
+    }
+
+  @media screen and (min-width:1024px) {
+
+
+    .search{
+       position: absolute;
+       top: 25%;
+       left: 10%;
+    }
+
+    .Left-top img{
+    width: 50px;
+    }
+
+    .search input{
+        width: 480px;
+    }
+  }
+
+  @media screen and (min-width:1400px){
+    .search input{
+        width: 800px;
+    }
+
+    .Left-top img{
+        width: 70px;
+        }
+
+        body{
+            font-size: 18px;
+        }
+
+        .num-basket{
+            font-size: 14px;
+            left: 8px;
+        }
+
+        .back-basket{
+            width: 16px;
+            height: 16px;
+        }
+
+        .thailand-size{
+            display: flex;
+            width: 35px;
+            justify-content: center;
+        }
+
+        .english-size{
+            display: flex;
+            width: 28px;
+            justify-content: center;
+        }
+  }
