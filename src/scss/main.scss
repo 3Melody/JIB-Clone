@@ -237,6 +237,237 @@ $head-color:#2c3d92;
         width: 50%;
     }
 
+    .product-detail{
+        @include marpad(0 15px,30px 0);
+
+    }
+
+    .product-detail h3{
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    .dot-list {
+        list-style-type: disc;
+        padding-left: 15px;
+        font-size: 13px;
+      }
+    
+    .right-contant{
+        border: 3px solid red;
+        padding: 10px;
+    }
+
+    .social{
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 10px;
+    }
+
+    @mixin like(){
+        display: flex;
+        background-color:rgb(56, 116, 228);
+        color: white;
+        @include marpad(5px 10px,0 15px);
+        border-radius: 3px;
+        align-items: center;
+    }
+
+    .like{
+        @include like();
+    }
+
+    .like-text{
+        margin: 0 5px;
+    }
+
+    .share{
+        @include like();
+        margin: 0;
+    }
+
+    .twiter{
+        background-color: rgb(0, 157, 255);
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 10px;
+    }
+
+    .link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+    }
+
+    .right-contant h3{
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .product-number{
+        font-weight: 500;
+        font-size: 16px;
+        margin: 5px 0;
+    }
+
+    .sale-details{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .sale-details div{
+        font-size: 12px;
+        margin: 5px 0;
+        color: gray;
+    }
+
+    .warranty{
+        display: flex;
+        background-color: rgba(128, 128, 128, 0.16);
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+        margin: 10px 0;
+        
+    }
+
+    .price{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .price h1{
+        color: red;
+        font-size: 36px;
+       
+    }
+
+    .discount{
+        color: #555;
+        display:flex;
+        font-size: 18px;
+        font-weight: 800;
+        justify-content: center;
+    }
+
+    .discount-price{
+        position: relative;
+    }
+
+    .line-out{
+        position: absolute;
+        width: 75%;
+        height: 1.1px;
+        background-color: black;
+        top: 9px;
+        transform: rotate(-10deg);
+    }
+
+    .delivery{
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0;
+        font-size: 12px;
+    }
+
+    .num-product-sale{
+        width: 100%;
+        display: flex;
+        height: 30px;
+        margin: 20px 0;
+    }
+
+    .num-product-sale input{
+        width: 100%;
+    }
+
+    .minus{
+        padding: 0 5px;
+       width: 20%;
+        border-radius: 15% 0 0 15%;
+        border: 1px solid rgba(0, 0, 0, 0.245);
+
+    }
+
+    .plus{
+        padding: 0 5px;
+        width: 20%;
+        border-radius: 0 15% 15% 0;
+    }
+    
+    .buy-now{
+        background-color: rgb(195, 55, 0);
+        color: white;
+        padding: 6px 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 120px;
+        border-radius: 6px;
+        font-size: 24px;
+        border: 0;
+    }
+
+    .space-buy{
+        display: flex;
+        justify-content: center;
+    }
+
+    .pay-later{
+        display: flex;
+        justify-content: center;
+    }
+
+    .pay-later button{
+        border: 0;
+        background-color: #f2a71d;
+        font-size: 12px;
+        color: white;
+        padding: 6px 12px;
+        margin: 10px 5px;
+        border-radius: 5px;
+    }
+
+    @mixin line($addcolor){
+        height: 1px;
+        width: 100%;
+        background-color:$addcolor;
+        margin: 10px 0;
+    }
+
+    .line-end{
+        @include line(red);
+    }
+
+    .contact-pay{
+        width: 100%;
+    }
+
+    .contact-pay img{
+        max-width: 10%;
+    }
+
+    .kbank{
+
+        display: flex;
+        justify-content: space-around;
+        margin: 10px 0;
+        align-items: center;
+        color: #555;
+    }
+
+    .line-end-pay{
+        @include line(rgba(128, 128, 128, 0.261))
+    }
+
+      
   body{
     background-color: #EBEBED;
     } 
@@ -248,7 +479,6 @@ $head-color:#2c3d92;
     }
 
   @media screen and (min-width:1024px) {
-
 
     .search{
        position: absolute;
