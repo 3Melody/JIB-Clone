@@ -174,9 +174,17 @@ $head-color:#2c3d92;
     border-left: 4px solid transparent;
     }
 
+   
+  .center-content{
+    display: flex;
+    justify-content: center
+  }
+    
+
     .contant{
         @include marpad(10px 10px,10px 5px);
         background-color: white;
+        max-width: 1632px;
     }
 
     .contant h1{
@@ -467,6 +475,27 @@ $head-color:#2c3d92;
         @include line(rgba(128, 128, 128, 0.261))
     }
 
+    .transport img{
+        margin: 10px 0;
+        max-width: 100%;
+    }
+
+    .favorite{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .favorite i{
+        font-size: 30px;
+        margin-right: 10px;
+    }
+
+    .favorite h3{
+        font-weight: bold;
+    }
+
+
       
   body{
     background-color: #EBEBED;
@@ -476,6 +505,51 @@ $head-color:#2c3d92;
     .search input{
         width: 100%;
     }
+
+    .contant{
+        display: flex;
+    }
+
+    .more-product{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top-view{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .top-view div{
+
+        margin: 5px 0;
+    }
+
+    .bottom-view div{
+        margin: 5px 0;
+    }
+
+    .bottom-view{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+
+    .right-contant{
+        max-width: 30%;
+    }
+
+    .show-product{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .lefe-content  h1{
+        margin-right: 20px;
+    }
+    
     }
 
   @media screen and (min-width:1024px) {
@@ -492,6 +566,16 @@ $head-color:#2c3d92;
 
     .search input{
         width: 480px;
+    }
+  }
+
+  @media screen and (min-width:1200px) {
+    .contant{
+        padding:20px 80px;
+    }
+
+    .left-content h1{
+        margin-right: 20px;
     }
   }
 
@@ -528,5 +612,9 @@ $head-color:#2c3d92;
             display: flex;
             width: 28px;
             justify-content: center;
+        }
+
+        .Right-top{
+            margin-right: 10px;
         }
   }
