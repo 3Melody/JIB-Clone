@@ -189,57 +189,57 @@ $head-color:#2c3d92;
 
     .show-product img{
         width: 100%;
-        
     }
 
 
 
     .view{
         height: 50px;
+        width: 50px;
         border:1px solid rgba(207, 207, 207, 0.428);
-        position: relative;
         display: grid;
+        position: relative;
         place-items: center;
         @include marpad(0,0 2px );
     }
 
     .view img{
         padding: 2px;
-        display:block;   
+        display: block;
     }
 
     .more-product{
         display: flex;
         flex-direction: column;
-        
     }
 
     .more-product img{
         width: 50px;
-        padding: 4px; 
-       
+        padding: 4px;
     }
 
-    .more-product div{
-        width: 100%;
-    }
 
     .top-view{
         display: flex;
     }
 
+    .top-view div{
+        width: 100%;
+    }
+
+    .bottom-view div{
+        width: 100%;
+    }
+
     .bottom-view{
         display: flex;
         margin-top: 5px;
+        width: 50%;
     }
-
 
   body{
     background-color: #EBEBED;
     } 
-
-
-
 
   @media screen and (min-width: 768px) {
     .search input{
